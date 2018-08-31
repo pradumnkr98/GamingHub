@@ -10,7 +10,6 @@
   {
     margin: 0px;
   }
-
   .topnav
   {
     background-color: #e9e9e9;
@@ -141,6 +140,35 @@
     width: 20%;
     height: 93%;
   }
+
+  .footer
+  {
+    background-color: #566573;
+    height: 300px;
+    margin-top: 10px
+  }
+  .footer .div
+  {
+    overflow: hidden;
+    float: left;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .footer .div ul
+  {
+    color: #fff;
+    list-style-type: none;
+  }
+  .footer .div ul a{
+    text-decoration:none;
+    font-size: 15px;
+    font-family: arial;
+    color: #fff;
+
+  }
+  .footer .div ul a:hover{
+    color: #2196F3;
+  }
   @media screen and (max-width: 600px) {
     .topnav .search-bar {
       float: none;
@@ -165,6 +193,9 @@
   </style>
 </head>
 <body>
+
+  <!-- code for the Header or top navigation bar of the page-->
+
   <header>
   <div class="topnav">
     <a><img src="D:\gaminghub\images\gaminghub.png" height="15px"></img></a>
@@ -174,7 +205,7 @@
     <div class="dropdown">
       <button class="dropbtn">Categories<i class="fa fa-caret-down"></i></button>
       <div class="dropdown-content">
-        <a href="#Multiplayer">Multiplayer</a>
+        <a href="">Multiplayer</a>
         <a href="#Adventure">Adventure</a>
         <a href="#Action">Action</a>
         <a href="#Real-Time Strategy">Real-Time Strategy</a>
@@ -203,20 +234,32 @@
     </div>
   </div>
 </header>
+
+<!-- code to show the list of items available on the website-->
+
   <h3 style="margin-left:20px;font-size:30px">Adventure</h3>
-  <div class="collection">
-      <div class="items">
-        <img src="https://cdn.images.dailystar.co.uk/dynamic/184/photos/34000/620x/5b3a054cebaa3_slackimgs.jpg" style="height:100%"></img>
+  <div class="collection scrolling-wrapper">
+      <div class="items card">
+        <img src="https://cdn.images.dailystar.co.uk/dynamic/184/photos/34000/620x/5b3a054cebaa3_slackimgs.jpg" style="height:50%;width:250px;"></img>
       </div>
-      <div class="items">
-          <img src="https://cdn.images.dailystar.co.uk/dynamic/184/photos/34000/620x/5b3a054cebaa3_slackimgs.jpg" style="height:100%"></img>
+      <div class="items card">
+          <img src="https://www.livemint.com/rf/Image-621x414/LiveMint/Period2/2017/06/24/Photos/Processed/clancyghost-kJtD--621x414@LiveMint.jpg" style="height:50%;width:250px;"></img>
       </div>
-      <div class="items">
-          <img src="https://cdn.images.dailystar.co.uk/dynamic/184/photos/34000/620x/5b3a054cebaa3_slackimgs.jpg" style="height:100%"></img>
+      <nav class="items card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkU_bZVXD16Ph6qKzZhKahoJJsHGCT9UolJTq8WSHFZa_VDOhn4w" style="height:50%;width:250px;"></img>
+      </nav>
+      <div class="items card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLGdDkOBQ8pjxmnlS6mgrYXvSlB6q25cwjn0EkH7fMXLwzwlFe" style="height:50%;width:250px;"></img>
+      </div>
+      <div class="items card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqY3Ir148JaYhwOOnUSKIzg146OoR3oDOEFshahBRgnGQhpCRQnQ" style="height:50%;width:250px;"></img>
       </div>
   </div>
   <h3 style="margin-left:20px;font-size:30px">Action</h3>
   <div class="collection">
+    <div class="items">
+      <img src="https://cdn.images.dailystar.co.uk/dynamic/184/photos/34000/620x/5b3a054cebaa3_slackimgs.jpg" style="height:50%;width:250px;"></img>
+    </div>
   </div>
   <h3 style="margin-left:20px;font-size:30px">Real-Time Strategy</h3>
   <div class="collection">
@@ -236,8 +279,50 @@
   <h3 style="margin-left:20px;font-size:30px">Gaming Accesorries</h3>
   <div class="collection">
   </div>
-  <h3 style="margin-left:20px;font-size:30px">Make Your PC Powerful</h3>
+  <h3 style="margin-left:20px;font-size:30px">Armed up your PC</h3>
   <div class="collection">
   </div>
+
+  <!-- code for the Footer of the page-->
+
+  <footer class="footer">
+    <div class="div" style="margin-left:100px;">
+      <h4 style="margin-left:40px;color:#000;">ABOUT</h4>
+      <ul class="ul">
+        <li class="a"><a href="#ContactUs">Contact Us</a></li>
+        <li><a href="#Aboutus">About Us</a></li>
+        <li><a href="#GmaingHubStories">GamingHub Stories</a></li>
+      </ul>
+    </div>
+    <div class="div" style="margin-left:100px;">
+      <h4 style="margin-left:40px;color:#000;">CONTACT US</h4>
+      <ul class="ul">
+        <li class="a"><a href="#ContactUs">Email ID</a></li>
+        <li><a href="#Aboutus">Phone No.</a></li>
+      </ul>
+    </div>
+    <div class="div" style="margin-left:100px;">
+      <h4 style="margin-left:55px;color:#000;">SOCIAL</h4>
+      <ul class="ul">
+        <li class="a"><img src="D:\gaminghub\social connect icons\facebook.png"><a href="#ContactUs">facebook</a></li>
+        <li class="a"><img src="D:\gaminghub\social connect icons\instagram.png"><a href="#ContactUs">instagram</a></li>
+        <li class="a"><img src="D:\gaminghub\social connect icons\twitter.png"><a href="#ContactUs">twitter</a></li>
+        <li class="a"><img src="D:\gaminghub\social connect icons\gmail.png"><a href="#ContactUs">Google plus</a></li>
+      </ul>
+    </div>
+    <div class="div" style="margin-left:100px;">
+      <h4 style="margin-left:40px;color:#000;">HELP</h4>
+      <ul class="ul">
+        <li class="a"><a href="#ContactUs">Payments</a></li>
+        <li><a href="#Aboutus">Shipping</a></li>
+        <li><a href="#Aboutus">Cancellation</a></li>
+        <li><a href="#Aboutus">FAQ</a></li>
+        <li><a href="#Aboutus">Report</a></li>
+      </ul>
+    </div>
+
+</footer>
+<div style="text-align:center;background-color:#566573;padding-bottom:20px;">&copy; Copyright 2018 GamingHub</div>
+
 </body>
 </html>
